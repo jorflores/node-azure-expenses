@@ -11,4 +11,8 @@ router.get("/", async (req, res) => {
   res.json(result.recordset);
 });
 
+router.get("/test", (req, res) => {
+  res.json({ test: "test" });
+});
+
 module.exports = router;
